@@ -1,0 +1,30 @@
+.container {
+    width:100%;
+}
+
+
+.container .circle{
+    display:flex;
+    margin:auto;
+    width:800px;
+    height: 800px;
+    border: 1px solid white;
+    border-radius: 100%;
+    position:absolute;
+    left:calc(50vw - 400px);
+    bottom: -400px;
+}
+
+.container img {
+    width: 800px;
+    position:absolute;
+    left:calc(50vw - 400px);
+    transition: transform 0.3s ease;
+    bottom: -400px;
+
+}
+
+
+.spin {
+    transform: rotate(90deg);
+}

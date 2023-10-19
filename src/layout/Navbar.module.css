@@ -1,0 +1,29 @@
+.bar{
+    width:80%;
+    height:100px;
+    color:white;
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.bar div {
+    height: 100%;
+    flex-grow: 1;
+}
+
+.logo {
+    max-height: 100%;
+    
+}
+
+
+.navList{
+    display: flex;
+    flex-grow: 1;
+    justify-content: right;
+    list-style: none;
+}
+

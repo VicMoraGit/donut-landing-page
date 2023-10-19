@@ -1,0 +1,9 @@
+.pink {
+    background: linear-gradient(#EE226A,#EC5D8F);
+    color:white;
+    height: 100%;
+    position:absolute;
+    width: 100%;
+    top:0px;
+    z-index: -1;
+}

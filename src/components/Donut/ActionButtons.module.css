@@ -1,0 +1,27 @@
+
+.actions {
+    left:calc(50vw - 600px);
+    bottom: 50px;
+    width:1200px;
+    position:absolute;
+    display:flex;
+    justify-content: space-between;
+}
+
+.actions button{
+    cursor:pointer;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    border: 2px solid white;
+    background-color:  #bbb;
+    opacity: .5;
+    color:white;
+    font-size:35px;
+    transition: opacity 0.2s ease;
+
+}
+
+.actions button:hover{
+    opacity: .7;
+}
