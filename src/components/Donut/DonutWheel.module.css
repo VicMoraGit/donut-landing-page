@@ -3,17 +3,6 @@
 }
 
 
-.container .circle{
-    display:flex;
-    margin:auto;
-    width:800px;
-    height: 800px;
-    border: 1px solid white;
-    border-radius: 100%;
-    position:absolute;
-    left:calc(50vw - 400px);
-    bottom: -400px;
-}
 
 .container img {
     width: 800px;

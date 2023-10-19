@@ -1,14 +1,6 @@
 
-.actions {
-    left:calc(50vw - 600px);
-    bottom: 50px;
-    width:1200px;
-    position:absolute;
-    display:flex;
-    justify-content: space-between;
-}
 
-.actions button{
+.action{
     cursor:pointer;
     border-radius: 100%;
     width: 70px;
@@ -22,6 +14,6 @@
 
 }
 
-.actions button:hover{
+.action:hover{
     opacity: .7;
 }

@@ -2,7 +2,9 @@ import { useState } from "react";
 import styles from "./DonutWheel.module.css";
 import RadialMenu from "./RadialMenu";
 import DonutFresa from "../../assets/Donuts/DonutFresa.png";
-import ActionButtons from "./ActionButtons";
+import Button from "./Button";
+import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+
 /*
 import DonutMenta from "../../assets/Donuts/DonutMenta.png";
 import DonutGlaseado from "../../assets/Donuts/DonutGlaseado.png";
@@ -28,15 +30,10 @@ const DonutWheel = () => {
 
   return (
     <div className={styles.container}>
+      <Button onClick={leftClickHandler} icon={faArrowLeft} />
       <img alt="donut" src={DonutFresa} />
-      <div className={styles.dot}></div>
       <RadialMenu index={donutIndex} />
-      <div className={styles.container}>
-        <ActionButtons
-          onLeftClick={leftClickHandler}
-          onRightClick={rightClickHandler}
-        />
-      </div>
+      <Button onClick={rightClickHandler} icon={faArrowRight} />
     </div>
   );
 };
