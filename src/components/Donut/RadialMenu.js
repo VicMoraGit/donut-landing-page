@@ -3,7 +3,7 @@ import styles from "./RadialMenu.module.css";
 
 const reducer = (state, action) => {
   const circleStyles = [
-    styles.raspberry,
+    styles.mint,
     styles.orange,
     styles.strawberry,
     styles.glazed,
@@ -71,38 +71,38 @@ const RadialMenu = (props) => {
         className={`${styles.drop_shadow} ${circleState.class}`}
       ></circle>
 
-      <text  id="text">
+      <text id="text">
         <textPath
           href="#wordsBorder"
-          className={circleState.index === 1 && styles.drop_shadow}
+          className={circleState.index === 1 ? styles.drop_shadow : undefined}
           startOffset="5%"
         >
-          raspberry
+          mint
         </textPath>
         <textPath
           href="#wordsBorder"
-          className={circleState.index === 2 && styles.drop_shadow}
+          className={circleState.index === 2 ? styles.drop_shadow : undefined}
           startOffset="25%"
         >
           orange
         </textPath>
         <textPath
           href="#wordsBorder"
-          className={circleState.index === 3 && styles.drop_shadow}
+          className={circleState.index === 3 ? styles.drop_shadow : undefined}
           startOffset="45%"
         >
           strawberry
         </textPath>
         <textPath
           href="#wordsBorder"
-          className={circleState.index === 4 && styles.drop_shadow}
+          className={circleState.index === 4 ? styles.drop_shadow : undefined}
           startOffset="69%"
         >
           glazed
         </textPath>
         <textPath
           href="#wordsBorder"
-          className={circleState.index === 5 && styles.drop_shadow}
+          className={circleState.index === 5 ? styles.drop_shadow : undefined}
           startOffset="86.6%"
         >
           chocolate

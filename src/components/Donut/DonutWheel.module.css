@@ -1,19 +1,57 @@
-.container {
-    width:100%;
+:root{
+    --general-animation-duration:0.2s
 }
 
-
+.container {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .container img {
     width: 800px;
-    position:absolute;
-    left:calc(50vw - 400px);
-    transition: transform 0.3s ease;
-    bottom: -400px;
+    transition: transform var(--general-animation-duration) ease;
+    margin-top:-800px;
+}
+
+.opacity_0{
+    opacity:0;
+}
+
+.column {
+    display:flex;
+    flex-direction: column;
+    margin: 0px 10%;
 
 }
 
+.fade_in{
+    animation-name:fadein;
+    animation-duration: var(--general-animation-duration);
+}
+.fade_out{
+    animation-name:fadeout;
+    animation-duration: var(--general-animation-duration);
+}
 
-.spin {
-    transform: rotate(90deg);
+
+
+
+@keyframes fadein {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@keyframes fadeout {
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
 }
