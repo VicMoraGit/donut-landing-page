@@ -1,33 +1,12 @@
-:root{
-    --general-animation-duration:0.2s;
-    --donut-wheel-height:  800px;
+.opacity_0{
+    opacity:0;
 }
-
-.container {
-    margin-top: calc(100vh - (var(--description-height) + var(--navbar-height) + (var(--donut-wheel-height)/2)));
-    position: relative;
-    width:100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container img {
+.donut {
     width: var(--donut-wheel-height);
     transition: transform var(--general-animation-duration) ease;
     margin-top: calc(-1 * var(--donut-wheel-height));
 }
 
-.opacity_0{
-    opacity:0;
-}
-
-.column {
-    display:flex;
-    flex-direction: column;
-    margin: 0px 10%;
-
-}
 
 .fade_in{
     animation-name:fadein;
@@ -37,8 +16,6 @@
     animation-name:fadeout;
     animation-duration: var(--general-animation-duration);
 }
-
-
 
 
 @keyframes fadein {

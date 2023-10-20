@@ -1,20 +1,21 @@
 import "./App.css";
-import Description from "./components/Description";
-import DonutWheel from "./components/Donut/DonutWheel";
-import Background from "./layout/Background";
-import Navbar from "./layout/Navbar";
+import ThemeContextProvider from "./context/theme-context";
+import Navbar from "./layout/Navbar/Navbar/Navbar";
+import Background from "./layout/Background/Background";
+import Description from "./components/Description/Description";
+import DonutSection from "./components/Donut/DonutSection/DonutSection";
 
 function App() {
   return (
-    <div>
+    <ThemeContextProvider>
       <Background>
         <Navbar />
         <main>
           <Description />
-          <DonutWheel />
+          <DonutSection />
         </main>
       </Background>
-    </div>
+    </ThemeContextProvider>
   );
 }
 

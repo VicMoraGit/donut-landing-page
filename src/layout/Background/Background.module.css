@@ -1,0 +1,57 @@
+
+@property --gradient-color-1{
+
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #00803c;
+}
+@property --gradient-color-2{
+
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #00cd60;
+}
+@property --gradient-color-3{
+
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #00cd8d;
+}
+
+.background {
+    background: linear-gradient(var(--gradient-color-1), var(--gradient-color-2) 30%,var(--gradient-color-3));
+    color:white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top:0px;
+    z-index: -1;
+    transition: --gradient-color-1 0.1s, --gradient-color-2 0.25s, --gradient-color-3 0.4s,;
+}
+
+.mint {
+    --gradient-color-1:#00803c;
+    --gradient-color-2:#00cd60;
+    --gradient-color-3:#00cd8d;
+}
+
+.orange {
+    --gradient-color-1:#b33f00;
+    --gradient-color-2:#d66400;
+    --gradient-color-3:#ff7627;
+}
+.strawberry {
+    --gradient-color-1:#800032;
+    --gradient-color-2:#ac2648;
+    --gradient-color-3:#ff8ca2;
+}
+.glazed {
+    --gradient-color-1:#d09200;
+    --gradient-color-2:#d9b200;
+    --gradient-color-3:#ffee7a;
+}
+.chocolate {
+    --gradient-color-1:#211300;
+    --gradient-color-2:#382000;
+    --gradient-color-3:#6f3f00;
+}

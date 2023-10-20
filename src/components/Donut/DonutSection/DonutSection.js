@@ -1,14 +1,10 @@
-import { useReducer, useState } from "react";
-import styles from "./DonutWheel.module.css";
-import RadialMenu from "./RadialMenu";
-import Button from "./Button";
+import { useContext, useEffect, useReducer } from "react";
+import styles from "./DonutSection.module.css";
+import RadialMenu from "../../Donut/RadialMenu/RadialMenu";
+import Button from "../Button/Button";
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-
-import DonutFresa from "../../assets/Donuts/DonutFresa.png";
-import DonutMenta from "../../assets/Donuts/DonutMenta.png";
-import DonutGlaseado from "../../assets/Donuts/DonutGlaseado.png";
-import DonutNaranja from "../../assets/Donuts/DonutNaranja.png";
-import DonutChocolate from "../../assets/Donuts/DonutChocolate.png";
+import { ThemeContext } from "../../../context/theme-context";
+import DonutImg from "../DonutImg/DonutImg";
 
 const reducer = (state, action) => {
   if (action.type === "stopright" && state.donutIndex <= 5) {
@@ -52,7 +48,8 @@ const reducer = (state, action) => {
   return state;
 };
 
-const DonutWheel = () => {
+const DonutSection = () => {
+  const ctx = useContext(ThemeContext);
   const [donutState, dispatchDonutState] = useReducer(reducer, {
     donutIndex: 1,
     topImgIndex: 0,
@@ -76,39 +73,41 @@ const DonutWheel = () => {
     }, 150);
   };
 
-  const donuts = [
-    { index: 1, src: DonutMenta },
-    { index: 2, src: DonutNaranja },
-    { index: 3, src: DonutFresa },
-    { index: 4, src: DonutGlaseado },
-    { index: 5, src: DonutChocolate },
-  ];
+  useEffect(() => {
+    ctx.setTheme(donutState.donutIndex);
+  }, [donutState.donutIndex, ctx]);
 
   return (
     <div className={styles.container}>
-      <Button onClick={leftClickHandler} icon={faArrowLeft} disabled={donutState.donutIndex===1}/>
+      <Button
+        onClick={leftClickHandler}
+        icon={faArrowLeft}
+        disabled={donutState.donutIndex === 1}
+      />
       <div className={styles.column}>
         <RadialMenu index={donutState.donutIndex} />
-        <img
-          style={donutState.rotatingStyle}
-          className={`
-          ${styles.opacity_0} 
-          ${donutState.isSpinning !== 0 && styles.fade_in}
-          `}
-          alt="Bottom donut"
-          src={donuts[donutState.bottomImgIndex].src}
+        <DonutImg
+          level="bottom"
+          index={donutState.bottomImgIndex}
+          isSpinning={donutState.isSpinning}
+          rotatingStyle={donutState.rotatingStyle}
+          alt="Bottom donut image"
         />
-        <img
-          style={donutState.rotatingStyle}
-          className={`
-          ${donutState.isSpinning !== 0 && styles.fade_out}`}
-          alt="Top donut"
-          src={donuts[donutState.topImgIndex].src}
+        <DonutImg
+          level="top"
+          index={donutState.topImgIndex}
+          isSpinning={donutState.isSpinning}
+          rotatingStyle={donutState.rotatingStyle}
+          alt="Top donut image"
         />
       </div>
-      <Button onClick={rightClickHandler} icon={faArrowRight} disabled={donutState.donutIndex===5}/>
+      <Button
+        onClick={rightClickHandler}
+        icon={faArrowRight}
+        disabled={donutState.donutIndex === 5}
+      />
     </div>
   );
 };
 
-export default DonutWheel;
+export default DonutSection;
