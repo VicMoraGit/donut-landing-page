@@ -58,7 +58,7 @@ const RadialMenu = (props) => {
         className={styles.drop_shadow}
         stroke="white"
         fill="none"
-        strokeWidth=".2"
+        strokeWidth=".3"
         id="circleBorder"
         d="
           M 0,50
@@ -66,7 +66,7 @@ const RadialMenu = (props) => {
       />
       <circle
         fill="white"
-        r="0.5"
+        r="0.6"
         cy={50}
         className={`${styles.drop_shadow} ${circleState.class}`}
       ></circle>

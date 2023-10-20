@@ -22,6 +22,7 @@
 
 .action:hover:not(:disabled){
     opacity: .7;
+    transform: scale(105%);
 }
 
 .action:disabled{

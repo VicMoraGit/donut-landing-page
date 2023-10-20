@@ -19,6 +19,7 @@
 }
 
 .background {
+    
     background: linear-gradient(var(--gradient-color-1), var(--gradient-color-2) 30%,var(--gradient-color-3));
     color:white;
     display: flex;
@@ -28,7 +29,9 @@
     z-index: -1;
     transition: --gradient-color-1 0.1s, --gradient-color-2 0.25s, --gradient-color-3 0.4s,;
 }
-
+.drip {
+    margin-top:-400px
+}
 .mint {
     --gradient-color-1:#00803c;
     --gradient-color-2:#00cd60;

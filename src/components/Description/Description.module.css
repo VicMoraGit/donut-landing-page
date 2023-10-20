@@ -10,6 +10,7 @@
 
 .subtitle, .title {
     color:white;
+    transition: all 0.2s;
     text-align: center;
 }
 
@@ -22,6 +23,7 @@
 
 
 }
+
 
 .subtitle {
     font-size: 25px;

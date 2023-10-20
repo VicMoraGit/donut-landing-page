@@ -30,17 +30,17 @@
 
 
 .mint {
-    transform: rotate(18deg);
+    transform: rotate(13deg);
 }
 .orange {
-    transform: rotate(54deg);
+    transform: rotate(51deg);
 }
 .strawberry {
     transform: rotate(90deg);
 }
 .glazed {
-    transform: rotate(126deg);
+    transform: rotate(130deg);
 }
 .chocolate {
-    transform: rotate(162deg);
+    transform: rotate(164.5deg);
 }
