@@ -16,10 +16,18 @@
     opacity: .5;
     color:white;
     font-size:calc(var(--button-radius));
-    transition: opacity 0.2s ease;
+    transition: all 0.2s ease;
     
 }
 
-.action:hover{
+.action:hover:not(:disabled){
     opacity: .7;
+}
+
+.action:disabled{
+    cursor:auto;
+    background-color:  #aaa;
+    border-color: #ccc;
+    color:#ccc;
+
 }

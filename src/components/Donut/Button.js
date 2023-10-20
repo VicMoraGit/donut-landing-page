@@ -7,7 +7,11 @@ const Button = (props) => {
   };
 
   return (
-    <button className={styles.action} onClick={clickHandler}>
+    <button
+      className={styles.action}
+      onClick={clickHandler}
+      disabled={props.disabled}
+    >
       <FontAwesomeIcon icon={props.icon} />
     </button>
   );

@@ -86,7 +86,7 @@ const DonutWheel = () => {
 
   return (
     <div className={styles.container}>
-      <Button onClick={leftClickHandler} icon={faArrowLeft} />
+      <Button onClick={leftClickHandler} icon={faArrowLeft} disabled={donutState.donutIndex===1}/>
       <div className={styles.column}>
         <RadialMenu index={donutState.donutIndex} />
         <img
@@ -106,7 +106,7 @@ const DonutWheel = () => {
           src={donuts[donutState.topImgIndex].src}
         />
       </div>
-      <Button onClick={rightClickHandler} icon={faArrowRight} />
+      <Button onClick={rightClickHandler} icon={faArrowRight} disabled={donutState.donutIndex===5}/>
     </div>
   );
 };
