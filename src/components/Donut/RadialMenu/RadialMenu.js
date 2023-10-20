@@ -52,7 +52,8 @@ const RadialMenu = (props) => {
         id="wordsBorder"
         d="
           M -3,50
-          a 53,53 0 1,1 106,0"
+          a 53,53 0 1,1 106,0
+          "
       />
       <path
         className={styles.drop_shadow}
@@ -62,7 +63,9 @@ const RadialMenu = (props) => {
         id="circleBorder"
         d="
           M 0,50
-          a 50,50 0 1,1 100,0"
+          a 50,50 0 1,1 100,0
+          a 50,50 0 1,1 -100,0
+          "
       />
       <circle
         fill="white"
