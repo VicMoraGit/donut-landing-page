@@ -1,6 +1,10 @@
+:root{
+    --navbar-height:100px
+}
+
 .bar{
     width:80%;
-    height:100px;
+    height:var(--navbar-height);
     color:white;
     margin: 0 10%;
     display: flex;

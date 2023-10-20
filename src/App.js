@@ -7,12 +7,13 @@ import Navbar from "./layout/Navbar";
 function App() {
   return (
     <div>
-      <Navbar />
-      <main>
-        <Description />
-        <DonutWheel />
-      </main>
-      <Background />
+      <Background>
+        <Navbar />
+        <main>
+          <Description />
+          <DonutWheel />
+        </main>
+      </Background>
     </div>
   );
 }

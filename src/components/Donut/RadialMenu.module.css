@@ -12,10 +12,9 @@
 }
 
 .svg {
-    width: 800px;
-    height:800px;
+    width: var(--donut-wheel-height);
+    height: var(--donut-wheel-height);
     overflow:visible;
-    margin-top: 105px;
 }
 
 .drop_shadow {

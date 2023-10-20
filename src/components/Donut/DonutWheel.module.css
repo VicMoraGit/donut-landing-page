@@ -1,8 +1,11 @@
 :root{
-    --general-animation-duration:0.2s
+    --general-animation-duration:0.2s;
+    --donut-wheel-height:  800px;
 }
 
 .container {
+    margin-top: calc(100vh - (var(--description-height) + var(--navbar-height) + (var(--donut-wheel-height)/2)));
+    position: relative;
     width:100%;
     display:flex;
     justify-content: center;
@@ -10,9 +13,9 @@
 }
 
 .container img {
-    width: 800px;
+    width: var(--donut-wheel-height);
     transition: transform var(--general-animation-duration) ease;
-    margin-top:-800px;
+    margin-top: calc(-1 * var(--donut-wheel-height));
 }
 
 .opacity_0{

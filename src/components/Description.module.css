@@ -1,3 +1,12 @@
+:root {
+    --description-height: 400px
+}
+
+
+.description {
+    height:var(--description-height)
+
+}
 
 .subtitle, .title {
     color:white;

@@ -1,15 +1,21 @@
+:root{
+    --button-diameter:70px;
+    --button-radius: 35px
+
+}
 
 
 .action{
+    margin-bottom: calc(var(--button-diameter) + var(--button-radius));
     cursor:pointer;
     border-radius: 100%;
-    width: 70px;
-    height: 70px;
+    width: var(--button-diameter);
+    height: var(--button-diameter);
     border: 2px solid white;
     background-color:  #bbb;
     opacity: .5;
     color:white;
-    font-size:35px;
+    font-size:calc(var(--button-radius));
     transition: opacity 0.2s ease;
     
 }
