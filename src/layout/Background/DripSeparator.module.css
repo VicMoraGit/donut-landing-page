@@ -1,0 +1,19 @@
+.drip {
+    
+    min-height: 400px;
+    max-height: 500px;
+    
+}
+
+.donut_section{
+    margin-top:-400px;
+
+}
+
+.reversed {
+    margin-top:-1px;
+    transform: rotate(180deg);
+}
+.drip path {
+    viewport-fit: cover;
+}
