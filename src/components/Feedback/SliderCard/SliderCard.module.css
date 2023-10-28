@@ -1,0 +1,58 @@
+.card {
+    margin: 50px 20px;
+    border-width: 2px;
+    border-style: solid;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color:black;
+    background-color: white;
+    padding:0 20px;
+    
+}
+
+
+.card span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin:10px 0;
+}
+
+.card p {
+    text-align: left;
+    font-size: 1.2rem;
+    width:100%;
+    overflow: hidden;
+
+}
+
+.card img{
+    
+    border-radius: 50%;
+    height: 100px;
+    width:100px;
+    margin-top: -50px;
+    
+}
+
+.mint {
+    border-color: var(--mint-border-color)
+}
+
+.orange {
+    border-color: var(--orange-border-color)
+
+}
+.strawberry {
+    border-color: var(--strawberry-border-color)
+
+}
+.glazed {
+    border-color: var(--glazed-border-color)
+
+}
+.chocolate {
+    border-color: var(--chocolate-border-color)
+
+}

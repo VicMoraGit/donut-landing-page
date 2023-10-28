@@ -1,0 +1,8 @@
+.slider{
+    display:flex;
+    overflow-x:hidden;
+    min-width: calc(259px *3);
+    width: 50%;
+    margin:0 auto;
+    padding-top: 50px;
+}

@@ -1,12 +1,13 @@
 .grid {
-    --gap-size: 10px;
-    --grid-width: calc(100% - ((var(--n-columns) - 1) * var(--gap-size)));
+    --column-gap-size: 10px;
+    --grid-width: calc(100% - ((var(--n-columns) - 1) * var(--column-gap-size)));
     --n-columns: 3;
     --column-width: calc(var(--grid-width)/var(--n-columns));
     
     display: grid;
     grid-template-columns: repeat(var(--n-columns),var(--column-width));
-    gap: var(--gap-size);
+    column-gap: var(--column-gap-size);
+    row-gap: 150px;
     margin: 100px auto 0;
     width: 80%;
     max-width: 1260px;

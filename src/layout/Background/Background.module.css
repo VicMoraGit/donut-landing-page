@@ -1,3 +1,16 @@
+:root{
+    --mint-color: #00cd60;
+    --orange-color: #d66400;
+    --strawberry-color: #ac2648;
+    --glazed-color: #d9b200;
+    --chocolate-color: #382000;
+    --mint-border-color: #00803c;
+    --orange-border-color: #b33f00;
+    --strawberry-border-color: #800032;
+    --glazed-border-color: #d09200;
+    --chocolate-border-color: #211300;
+
+}
 
 @property --gradient-color-1{
 

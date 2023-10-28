@@ -9,6 +9,7 @@ const Background = (props) => {
   const elements = [
     props.children,
     <DripSeparator
+      key="DripSeparator"
       reversed={props.reversed}
       donut_section={props.donut_section}
     />,

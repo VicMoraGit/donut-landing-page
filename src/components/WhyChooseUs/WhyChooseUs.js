@@ -1,10 +1,10 @@
 import AdvantagesGrid from "./AdvantagesGrid/AdvantagesGrid";
 import styles from "./WhyChooseUs.module.css";
 
-const WhyChooseUs = () => {
+const WhyChooseUs = (props) => {
   return (
     <section className={styles.container}>
-      <h1>Why Choose Us</h1>
+      <h1 id={props.id}>Why Choose Us</h1>
       <AdvantagesGrid></AdvantagesGrid>
     </section>
   );

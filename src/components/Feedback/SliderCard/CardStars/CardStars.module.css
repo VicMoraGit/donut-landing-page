@@ -1,0 +1,37 @@
+.active {
+    opacity:1;
+}
+
+.inactive {
+    opacity:0.2;
+}
+.star {
+    font-size: 1.5rem;
+}
+.container {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.mint {
+    color: var(--mint-color)
+}
+
+.orange {
+    color: var(--orange-color)
+
+}
+.strawberry {
+    color: var(--strawberry-color)
+
+}
+.glazed {
+    color: var(--glazed-color)
+
+}
+.chocolate {
+    color: var(--chocolate-color)
+
+}

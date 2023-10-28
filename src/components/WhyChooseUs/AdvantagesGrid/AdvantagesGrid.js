@@ -13,12 +13,16 @@ import {
 const AdvantagesGrid = () => {
   const advantages = useMemo(
     () => [
-      { text: "A huge variety of tastes", icon: faFaceGrinTongue },
-      { text: "Organic products", icon: faSeedling },
-      { text: "Made by hand", icon: faHand },
-      { text: "Convenient location in the city center", icon: faLocationDot },
-      { text: "Only professional confectioners", icon: faStar },
-      { text: "Atmosphere of warmth and coziness", icon: faFireBurner },
+      { key: 1, text: "A huge variety of tastes", icon: faFaceGrinTongue },
+      { key: 2, text: "Organic products", icon: faSeedling },
+      { key: 3, text: "Made by hand", icon: faHand },
+      {
+        key: 4,
+        text: "Convenient location in the city center",
+        icon: faLocationDot,
+      },
+      { key: 5, text: "Only professional confectioners", icon: faStar },
+      { key: 6, text: "Atmosphere of warmth and coziness", icon: faFireBurner },
     ],
 
     []
@@ -26,7 +30,12 @@ const AdvantagesGrid = () => {
   return (
     <div className={styles.grid}>
       {advantages.map((item) => (
-        <AdvantageItem className content={item.text} icon={item.icon} />
+        <AdvantageItem
+          key={item.key}
+          className
+          content={item.text}
+          icon={item.icon}
+        />
       ))}
     </div>
   );

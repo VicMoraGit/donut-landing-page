@@ -1,7 +1,8 @@
 .item  {
     padding-left: 40px;
+
 }
-a {
+.item > a {
     color:white;
     text-decoration: none;
     font-size: 20px;

@@ -11,7 +11,7 @@ const Navbar = () => {
       </div>
       <ul className={styles.navList}>
         <NavItem href="#" name="Menu" />
-        <NavItem href="#" name="About us" />
+        <NavItem href="#WhyChooseUs" name="About us" />
         <NavItem href="#" name="Feedback" />
         <NavItem href="#" name="Contact" />
       </ul>

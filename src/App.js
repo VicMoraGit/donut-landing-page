@@ -5,6 +5,7 @@ import Background from "./layout/Background/Background";
 import Description from "./components/Description/Description";
 import DonutSection from "./components/Donut/DonutSection/DonutSection";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
+import Feedback from "./components/Feedback/Feedback";
 
 function App() {
   return (
@@ -16,9 +17,11 @@ function App() {
           <DonutSection />
         </main>
       </Background>
-      <WhyChooseUs />
+      <WhyChooseUs id="WhyChooseUs" />
 
-      <Background reversed={true}></Background>
+      <Background reversed={true}>
+        <Feedback />
+      </Background>
     </ThemeContextProvider>
   );
 }
