@@ -6,6 +6,8 @@ import Description from "./components/Description/Description";
 import DonutSection from "./components/Donut/DonutSection/DonutSection";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 import Feedback from "./components/Feedback/Feedback";
+import Contact from "./components/Contact/Contact";
+import Footer from "./layout/Footer/Footer";
 
 function App() {
   return (
@@ -18,9 +20,10 @@ function App() {
         </main>
       </Background>
       <WhyChooseUs id="WhyChooseUs" />
-
       <Background reversed={true}>
-        <Feedback />
+        <Feedback id="Feedback" />
+        <Contact id="Contact" />
+        <Footer />
       </Background>
     </ThemeContextProvider>
   );

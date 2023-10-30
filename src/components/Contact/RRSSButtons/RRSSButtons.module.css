@@ -1,34 +1,25 @@
 .container {
-    text-align: center;
+    width: 280px;
+    display:flex;
+    justify-content: space-between;
+    margin: 0 auto;
 }
-
-.container h1 {
-    font-size: 80px;
-    font-weight: bold;   
-
-}
-
-.phone{
-    margin-top: -60px;
-}
-
-.mint {
+.mint > a{
     color: var(--mint-dark-color)
 }
 
-.orange {
+.orange > a{
     color: var(--orange-dark-color)
 
 }
-.strawberry {
+.strawberry > a{
     color: var(--strawberry-dark-color)
 
 }
-.glazed {
+.glazed > a{
     color: var(--glazed-dark-color)
 
 }
-.chocolate {
+.chocolate > a{
     color: var(--chocolate-dark-color)
-
 }

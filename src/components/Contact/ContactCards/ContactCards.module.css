@@ -1,11 +1,10 @@
-.container {
-    text-align: center;
-}
-
-.container h1 {
-    font-size: 80px;
-    font-weight: bold;   
-
+.row {
+    display:flex;
+    max-width:1000px;
+    width: 80%;
+    margin: 0 auto 20px;
+    justify-content: space-evenly;
+    color:black;
 }
 
 .phone{

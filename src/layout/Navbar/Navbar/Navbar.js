@@ -12,8 +12,8 @@ const Navbar = () => {
       <ul className={styles.navList}>
         <NavItem href="#" name="Menu" />
         <NavItem href="#WhyChooseUs" name="About us" />
-        <NavItem href="#" name="Feedback" />
-        <NavItem href="#" name="Contact" />
+        <NavItem href="#Feedback" name="Feedback" />
+        <NavItem href="#Contact" name="Contact" />
       </ul>
     </nav>
   );
