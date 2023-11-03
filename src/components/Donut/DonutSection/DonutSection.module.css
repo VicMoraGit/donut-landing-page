@@ -9,6 +9,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.1s
 
 }
 
@@ -22,10 +23,47 @@
 @media (max-width:1200px) {
 
     :root{
-        --general-animation-duration:0.2s;
-        --donut-wheel-height:  100%;
+        --donut-wheel-height: 700px;
     }
     .container{
-        flex-direction:column
+        align-items: flex-start;
+
+    }
+    .column {
+        margin: 0px;
+    
+    }
+}
+@media (max-width:950px) {
+
+    :root{
+        --donut-wheel-height: 600px;
+    }
+}
+
+@media (max-width:815px) {
+
+    :root{
+        --donut-wheel-height: 500px;
+    }
+}
+
+@media (max-width:715px) {
+
+    :root{
+        --donut-wheel-height: 400px;
+    }
+}
+@media (max-width:550px) {
+
+    :root{
+        --donut-wheel-height: 350px;
+    }
+}
+
+@media (max-width:400px) {
+
+    :root{
+        --donut-wheel-height: 320px;
     }
 }

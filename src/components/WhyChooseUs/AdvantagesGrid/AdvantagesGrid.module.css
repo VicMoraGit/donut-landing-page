@@ -12,3 +12,28 @@
     width: 80%;
     max-width: 1260px;
 }
+
+
+@media (max-width:1200px){
+    .grid {
+        
+        row-gap: 130px;
+        width: 80%;
+    }
+}
+
+
+@media (max-width:750px){
+    .grid {
+        
+        row-gap: 100px;
+        width: 90%;
+    }
+}
+@media (max-width:450px){
+    .grid {
+        
+        row-gap: 80px;
+        width: 90%;
+    }
+}

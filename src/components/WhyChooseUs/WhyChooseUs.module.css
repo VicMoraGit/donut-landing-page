@@ -32,3 +32,21 @@
     color: var(--chocolate-dark-color)
 
 }
+
+@media (max-width:1200px){
+    .container h1 {
+        font-size: 70px;
+    }
+}
+
+
+@media (max-width:615px){
+    .container h1 {
+        font-size: 60px;
+    }
+}
+@media (max-width:500px){
+    .container h1 {
+        font-size: 50px;
+    }
+}

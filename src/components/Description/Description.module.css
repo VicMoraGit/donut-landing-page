@@ -4,7 +4,8 @@
 
 
 .description {
-    height:var(--description-height)
+    height:var(--description-height);
+    overflow:hidden
 
 }
 
@@ -32,3 +33,47 @@
 
 }
 
+@media (max-width:1200px){
+    .title {
+        font-size: 45px;
+        padding: 50px 10% 0;
+        line-height: 55px;
+        font-weight: bold
+    
+    
+    }
+    
+    
+    .subtitle {
+        font-size: 25px;
+        line-height: 30px;
+        padding: 50px 10% 0;
+
+    }
+}
+
+@media (max-width:615px){
+    .title {
+        font-size: 40px;
+        padding: 50px 10% 0;
+        line-height: 50px;
+        font-weight: bold
+    
+    
+    }
+    
+    
+    .subtitle {
+        font-size: 25px;
+        line-height: 30px;
+        padding: 50px 10% 0;
+
+    }
+}
+
+@media (max-width: 465px){
+    :root {
+        --description-height: 300px
+    }
+    
+}

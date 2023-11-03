@@ -80,6 +80,7 @@ const DonutSection = () => {
   return (
     <div className={styles.container}>
       <Button
+        left
         onClick={leftClickHandler}
         icon={faArrowLeft}
         disabled={donutState.donutIndex === 1}
@@ -102,6 +103,7 @@ const DonutSection = () => {
         />
       </div>
       <Button
+        right
         onClick={rightClickHandler}
         icon={faArrowRight}
         disabled={donutState.donutIndex === 5}

@@ -35,7 +35,7 @@
         width: 100%;
         top:0;
         right:100%;
-        background-color: rgba(255, 255, 255, .8);
+        background-color: rgba(255, 255, 255, .7);
         position:fixed;
         height: 100%;
         flex-direction: column;
@@ -43,6 +43,7 @@
         align-items: center;
         transition: all 0.5s;
         z-index: 9;
+        backdrop-filter: blur(10px);
     }
 
     .show{

@@ -12,10 +12,13 @@
 @media (max-width:700px) {
     .item > a {
         color:black;
+        font-size: 50px;
+
         
     }
     .item  {
         padding-left: 0px;
+        margin: 5% 0;
     
     }
 }

@@ -8,7 +8,12 @@ const Button = (props) => {
 
   return (
     <button
-      className={styles.action}
+      className={`
+      ${props.right && styles.right}  
+      ${styles.action}
+      ${props.left && styles.left}  
+  
+       `}
       onClick={clickHandler}
       disabled={props.disabled}
     >
