@@ -12,8 +12,8 @@
 }
 
 .svg {
-    width: var(--donut-wheel-height);
-    height: var(--donut-wheel-height);
+    max-width: var(--donut-wheel-height);
+    max-height: var(--donut-wheel-height);
     overflow:visible;
 
 }

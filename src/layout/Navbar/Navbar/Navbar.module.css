@@ -15,7 +15,6 @@
 
 .bar div {
     height: 100%;
-    flex-grow: 1;
 }
 
 .logo {
@@ -26,8 +25,30 @@
 
 .navList{
     display: flex;
-    flex-grow: 1;
     justify-content: right;
     list-style: none;
 }
 
+@media (max-width:700px) {
+    .navList{
+        padding-top: var(--navbar-height);;
+        width: 100%;
+        top:0;
+        right:100%;
+        background-color: rgba(255, 255, 255, .8);
+        position:fixed;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all 0.5s;
+        z-index: 9;
+    }
+
+    .show{
+        right:0px;
+
+    }
+
+
+}

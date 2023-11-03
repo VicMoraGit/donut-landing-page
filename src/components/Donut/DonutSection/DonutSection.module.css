@@ -6,7 +6,6 @@
 .container {
     margin-top: calc(100vh - (var(--description-height) + var(--navbar-height) + (var(--donut-wheel-height)/2)));
     position: relative;
-    width:100%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -18,4 +17,15 @@
     flex-direction: column;
     margin: 0px 10%;
 
+}
+
+@media (max-width:1200px) {
+
+    :root{
+        --general-animation-duration:0.2s;
+        --donut-wheel-height:  100%;
+    }
+    .container{
+        flex-direction:column
+    }
 }

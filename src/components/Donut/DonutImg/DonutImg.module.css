@@ -2,7 +2,7 @@
     opacity:0;
 }
 .donut {
-    width: var(--donut-wheel-height);
+    max-width: var(--donut-wheel-height);
     transition: transform var(--general-animation-duration) ease;
     margin-top: calc(-1 * var(--donut-wheel-height));
 }

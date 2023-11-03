@@ -2,7 +2,23 @@
     display:flex;
     overflow-x:hidden;
     min-width: calc(259px *3);
-    width: 50%;
+    width: 80%;
     margin:0 auto;
     padding-top: 50px;
+    max-width: 1200px;
+
+}
+
+.slider > :nth-child(2){
+    transform: scale(1.15);
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+@media (max-width:1200px) {
+
+    .slider{
+        flex-direction:column;
+        min-width:100%
+    }
 }
