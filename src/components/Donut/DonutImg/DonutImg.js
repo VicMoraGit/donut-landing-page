@@ -1,10 +1,10 @@
 import styles from "./DonutImg.module.css";
 
-import DonutFresa from "../../../assets/Donuts/DonutFresa.png";
-import DonutMenta from "../../../assets/Donuts/DonutMenta.png";
-import DonutGlaseado from "../../../assets/Donuts/DonutGlaseado.png";
-import DonutNaranja from "../../../assets/Donuts/DonutNaranja.png";
-import DonutChocolate from "../../../assets/Donuts/DonutChocolate.png";
+import DonutFresa from "../../../assets/Donuts/DonutFresa.webp";
+import DonutMenta from "../../../assets/Donuts/DonutMenta.webp";
+import DonutGlaseado from "../../../assets/Donuts/DonutGlaseado.webp";
+import DonutNaranja from "../../../assets/Donuts/DonutNaranja.webp";
+import DonutChocolate from "../../../assets/Donuts/DonutChocolate.webp";
 import { useMemo } from "react";
 
 const DonutImg = (props) => {
