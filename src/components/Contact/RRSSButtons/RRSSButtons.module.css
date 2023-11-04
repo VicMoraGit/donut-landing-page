@@ -1,25 +1,28 @@
 .container {
-    width: 280px;
-    display:flex;
-    justify-content: space-between;
-    margin: 0 auto;
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
-.mint > a{
-    color: var(--mint-dark-color)
+.mint > a {
+  color: var(--mint-dark-color);
 }
 
-.orange > a{
-    color: var(--orange-dark-color)
-
+.orange > a {
+  color: var(--orange-dark-color);
 }
-.strawberry > a{
-    color: var(--strawberry-dark-color)
-
+.strawberry > a {
+  color: var(--strawberry-dark-color);
 }
-.glazed > a{
-    color: var(--glazed-dark-color)
-
+.glazed > a {
+  color: var(--glazed-dark-color);
 }
-.chocolate > a{
-    color: var(--chocolate-dark-color)
+.chocolate > a {
+  color: var(--chocolate-dark-color);
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin-top: 30px;
+  }
 }
